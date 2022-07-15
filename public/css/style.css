@@ -14,10 +14,10 @@ header {
   
 }
 
-body{
-  /*background-color: black;
-  color: white;*/
-}
+/*body{
+  background-color: black;
+  color: white;
+}*/
 
 .fa-solid {
   width: 50px;
@@ -25,6 +25,7 @@ body{
 
 svg{
   margin-left:25px;
+  color: whitesmoke;
 }
   
 
@@ -32,4 +33,12 @@ nav{
   font-size: larger;
     align-items: center;
     display: flex;
+    justify-content: center;
+    font-size: xx-large;
 }
+
+
+
+
+
+
