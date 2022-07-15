@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.744);
+  color: white;
+  border-bottom: 2px solid white;
+  
+}
+
+body{
+  background-color: black;
+  color: white;
+}
+
+.fa-solid {
+  width: 50px;
+}
+

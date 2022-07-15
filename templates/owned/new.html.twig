@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Acheter une crypto{% endblock %}
+
+{% block body %}
+    <h1>Create new Owned</h1>
+
+    {{ include('owned/_form.html.twig') }}
+
+    <a href="{{ path('app_owned_index') }}">back to list</a>
+{% endblock %}

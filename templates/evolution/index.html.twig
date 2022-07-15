@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Evolution index{% endblock %}
+
+{% block body %}
+    <h1>Evolution index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Date</th>
+                <th>Value</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for evolution in evolutions %}
+            <tr>
+                <td>{{ evolution.id }}</td>
+                <td>{{ evolution.date ? evolution.date|date('Y-m-d') : '' }}</td>
+                <td>{{ evolution.value }}</td>
+                <td>
+                    <a href="{{ path('app_evolution_show', {'id': evolution.id}) }}">show</a>
+                    <a href="{{ path('app_evolution_edit', {'id': evolution.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_evolution_new') }}">Create new</a>
+{% endblock %}

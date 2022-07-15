@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}crypto posseder{% endblock %}
+
+{% block body %}
+    <h1></h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Value</th>
+                <th>Quantity</th>
+                <th>actions</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+        {% for owned in owneds %}
+            <tr>
+                <td>{{ owned.id }}</td>
+                <td>{{ owned.value }}</td>
+                <td>{{ owned.quantity }}</td>
+                <td>
+                    <a href="{{ path('app_owned_show', {'id': owned.id}) }}">show</a>
+                    <a href="{{ path('app_owned_edit', {'id': owned.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_owned_new') }}">Create new</a>
+{% endblock %}

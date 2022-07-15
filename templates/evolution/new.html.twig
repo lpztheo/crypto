@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Evolution{% endblock %}
+
+{% block body %}
+    <h1>Create new Evolution</h1>
+
+    {{ include('evolution/_form.html.twig') }}
+
+    <a href="{{ path('app_evolution_index') }}">back to list</a>
+{% endblock %}

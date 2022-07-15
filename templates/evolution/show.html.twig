@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Evolution{% endblock %}
+
+{% block body %}
+    <h1>Evolution</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ evolution.id }}</td>
+            </tr>
+            <tr>
+                <th>Date</th>
+                <td>{{ evolution.date ? evolution.date|date('Y-m-d') : '' }}</td>
+            </tr>
+            <tr>
+                <th>Value</th>
+                <td>{{ evolution.value }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_evolution_index') }}">back to list</a>
+
+    <a href="{{ path('app_evolution_edit', {'id': evolution.id}) }}">edit</a>
+
+    {{ include('evolution/_delete_form.html.twig') }}
+{% endblock %}
