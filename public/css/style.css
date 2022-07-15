@@ -2,6 +2,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Arvo', serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif
 }
 header {
   padding: 30px;
@@ -12,11 +15,21 @@ header {
 }
 
 body{
-  background-color: black;
-  color: white;
+  /*background-color: black;
+  color: white;*/
 }
 
 .fa-solid {
   width: 50px;
 }
 
+svg{
+  margin-left:25px;
+}
+  
+
+nav{
+  font-size: larger;
+    align-items: center;
+    display: flex;
+}
