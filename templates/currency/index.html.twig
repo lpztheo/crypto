@@ -17,7 +17,7 @@
         <tbody>
         {% for currency in currencies %}
             <tr>
-                <td>{{ currency.id }}</td>
+                <td><img src="{{'https://s2.coinmarketcap.com/static/img/coins/64x64/' ~ currency.id ~ '.png' }}" alt="logo crytpomonnaie"> </td>
                 <td>{{ currency.name }}</td>
                 <td id="value{{currency.name}}" >null</td>
                 <td>
