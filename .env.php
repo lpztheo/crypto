@@ -4,4 +4,7 @@
 
 return array (
   'APP_ENV' => 'dev',
+  'CORS_ALLOW_ORIGIN' => "*"
 );
+
+

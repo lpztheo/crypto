@@ -26,6 +26,7 @@ header {
 svg{
   margin-left:25px;
   color: whitesmoke;
+  
 }
   
 
@@ -33,8 +34,9 @@ nav{
   font-size: larger;
     align-items: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     font-size: xx-large;
+    padding: 15px;
 }
 
 

@@ -35,6 +35,7 @@
         {% endfor %}
         </tbody>
     </table>
-
+    <script> let currencies= {"usd":5}</script>
+    <script type="text/javascript" src="{{asset('javascript/script.js')}}"> </script>
     <a href="{{ path('app_owned_new') }}">Create new</a>
 {% endblock %}

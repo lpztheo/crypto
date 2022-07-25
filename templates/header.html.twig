@@ -7,26 +7,33 @@ Crypto Tracker <a href="{{ path('app_evolution_index') }}"> <svg xmlns="http://w
 </svg> </a> <a href="{{ path('app_owned_new') }}"> <svg xmlns="http://www.w3.org/2000/svg" width="80" height="60" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
   <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
 </svg></a>
+<style>
+nav{
+  align-items: center;
+    display: flex;
+    justify-content: center;
+}
+</style>
 
 
 {% endif %}
 
 {% if app.request.attributes.get('_route')=='app_owned_new' %}
-<a  href="{{ path('app_currency_index') }}"  ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi croix" viewBox="0 0 16 16">
+<a  href="{{ path('app_currency_index') }}"  ><svg xmlns="http://www.w3.org/2000/svg" width="45" height="25" fill="currentColor" class="bi croix" viewBox="0 0 16 16">
   <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
 </svg> </a> 
 Ajouter une transaction
 {% endif %}
 
 {% if app.request.attributes.get('_route')=='app_owned_edit' %}
-<a href="{{ path('app_currency_index') }}"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi croix" viewBox="0 0 16 16">
+<a href="{{ path('app_currency_index') }}"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="25" fill="currentColor" class="bi croix" viewBox="0 0 16 16">
   <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
 </svg> </a>
 </svg> Supprimer un montant
 {% endif %}
 
 {% if app.request.attributes.get('_route')=='app_evolution_index' %}
-<a href="{{ path('app_currency_index') }}"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi croix" viewBox="0 0 16 16">
+<a href="{{ path('app_currency_index') }}"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="25" fill="currentColor" class="bi croix" viewBox="0 0 16 16">
   <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
 </svg> </a>
 Vos gains

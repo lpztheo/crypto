@@ -9,6 +9,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Security\Core\Role\Role;
 
 /**
  * @Route("/")
@@ -24,6 +25,7 @@ class CurrencyController extends AbstractController
             'currencies' => $currencyRepository->findAll(),
         ]);
     }
+       
 
     /**
      * @Route("currency/new", name="app_currency_new", methods={"GET", "POST"})
